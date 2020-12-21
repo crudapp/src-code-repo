@@ -1,0 +1,29 @@
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old) {
+  margin  : 0;
+  opacity : 0;
+  padding : 0;
+  width   : 28px;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label {
+  background   : url('../images/checks.png') no-repeat 0 0;
+  display      : inline-block;
+  line-height  : 24px;
+  margin-left  : -28px;
+  padding-left : 28px;
+}
+
+input[type=checkbox]:not(old):checked + label {
+  background-position : 0 -24px;
+}
+
+input[type=radio]:not(old):checked + label {
+  background-position : 0 -48px;
+}
+
+input[type=checkbox]:hover + label:hover,
+input[type=radio   ]:hover + label:hover {
+	cursor: pointer;
+}

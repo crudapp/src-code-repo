@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link rel="shortcut icon" th:href="@{/resources/images/favicon.ico}" type="image/x-icon" />
+	
+	<title>CRUD Application</title>
+	
+	<link rel="stylesheet" th:href="@{/resources/css/scaffold/bodyhdrftr.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/scaffold/logo.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/scaffold/main.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/scaffold/menu.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/scaffold/sitename.css}">
+
+	<link rel="stylesheet" th:href="@{/resources/css/button.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/checkbox-radiobtn.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/container.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/font-awesome.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/fonts.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/form.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/inputbox.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/login.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/mask.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/select.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/table.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/textarea.css}">
+	<link rel="stylesheet" th:href="@{/resources/css/z-index.css}">
+	
+	<script th:src="@{/resources/js/jquery-2.1.0.min.js}"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo-div" ><img id="logo" th:src="@{/resources/images/logo.png}" /></div>
+
+		<div id="site-name" class="a" >
+			<span>
+				<span style="color: #FFCB00;">C</span>
+				<span style="color: #40E0D0;">R</span>
+				<span style="color: #00BFFF;">U</span>
+				<span style="color: red;">D</span>
+				<sub class="subclass" style="color: #40E0D0;">read page</sub>
+			</span>
+		</div>
+		<div id="menu-div" ></div>
+	</header>
+	
+	<form id="headerForm" method="get" action="#" style="display:none;"></form>
+
+	<div id="main">
+
+		<article>
+			<form id="readForm" method="GET">
+
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Address</th>
+						<th>Diet</th>
+						<th>Hobbies</th>
+						<th>Languages</th>
+						<th>Gender</th>
+					</tr>
+					<tr th:each="user, iStat : ${userList}" th:style="${iStat.odd}? 'font-weight: bold;'" th:alt-title="${iStat.even}? 'even' : 'odd'" id="${iStat.index}">
+						<td class="medium-font, no-cursor" th:text="${user.name}" />
+						<td class="medium-font, no-cursor" th:text="${user.address}" />
+						<td class="medium-font, no-cursor" th:text="${user.diet}" />
+						<td class="medium-font, no-cursor" th:text="${user.hobbies}" />
+						<td class="medium-font, no-cursor" th:text="${user.languages}" />
+						<td class="medium-font, no-cursor" th:text="${user.gender}" />
+					</tr>
+				</table>
+
+			</form>
+		</article>
+
+		<nav></nav>
+
+		<aside></aside>
+
+	</div>
+	
+	<footer>&copy;2015 Raven Media LLP<br>All rights reserved</footer>
+</body>
+
+<script th:src="@{/resources/js/common.js}"></script>
+<script th:src="@{/resources/js/read.js}"></script>
+</html>

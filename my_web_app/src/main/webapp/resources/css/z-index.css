@@ -1,0 +1,11 @@
+.soft-mask {
+	z-index: 1;
+}
+
+.user-update-dlg {
+	z-index: 900;
+}
+
+.del-confirm-dlg {
+	z-index: 901;
+}

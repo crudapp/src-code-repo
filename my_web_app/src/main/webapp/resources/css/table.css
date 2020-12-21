@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.small-font {
+	font-size: 70% !important;
+}
+.medium-font {
+	font-size: 85% !important;
+}
+.small-font:hover, .medium-font:hover {
+   cursor: pointer;
+}
+
+.no-cursor {
+   cursor: none !important;
+}

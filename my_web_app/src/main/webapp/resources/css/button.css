@@ -1,0 +1,81 @@
+button {
+  /*top/bottom right/left*/
+  margin: 8px 0;
+  padding: 14px 20px;	
+}
+
+.qtr-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 125%;
+  margin-left: .2%;
+  width: 24.4%;
+}
+.qtr-btn:hover {
+  background-color: #45a049;
+}
+
+.half-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-left: .2%;
+  width: 49.5%;
+}
+.half-btn:hover {
+  background-color: #45a049;
+}
+
+.full-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+.full-btn:hover {
+  background-color: #45a049;
+}
+
+.logout-btn {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  float: right;
+  font-size: 25% !important;
+  margin-top: 3vh;
+  margin-right: .5%;
+}
+
+.welcome-msg {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  float: right;
+  font-size: 30% !important;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: .5%;
+}
+
+.cancelbtn {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-left: .2%;
+  width: 24.4%;
+}
+.cancelbtn :hover {
+  background-color: #45a049;
+}

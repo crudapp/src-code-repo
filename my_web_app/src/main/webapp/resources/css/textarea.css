@@ -1,0 +1,11 @@
+textarea {
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 150px;
+  padding: 12px 20px;
+  padding-left: 5px;
+  resize: none;
+  width: 100%;
+}

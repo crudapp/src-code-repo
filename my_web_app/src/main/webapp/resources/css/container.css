@@ -1,0 +1,29 @@
+.container {
+  background-color: #f2f2f2;/*#F0F0F0;*/
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.user-update-dlg {
+	background-color: #f2f2f2;
+	border-radius:3px;
+	display:none;
+	height: auto;
+	left: 25%;
+	position: fixed;
+	top: 10vh;
+	width: 50%;
+	padding: 5px;
+}
+
+.del-confirm-dlg {
+	background-color: #f2f2f2;
+	border-radius:3px;
+	display:none;
+	height: auto;
+	left: 25%;
+	position: fixed;
+	top: 10vh;
+	width: 50%;
+	padding: 5px;
+}

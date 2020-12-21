@@ -1,0 +1,17 @@
+#main {
+	display: flex;
+	min-height: calc(100vh - 20vh);
+}
+
+#main > article {
+	flex: 1;
+}
+
+#main > nav, #main > aside {
+	flex: 0 0 20vw;
+	background: #F8F8F8;
+}
+
+#main > nav {
+	order: -1;
+}
